@@ -60,7 +60,7 @@ const Login = () => {
     <Fragment>
       <div className="form-usuario">
         <div className="contenedor-form sombra-dark">
-          <h1>Iniciar Sesion</h1>
+          <h1>Log in</h1>
 
           <form onSubmit={onSubmit}>
             <div className="campo-form">
@@ -69,30 +69,30 @@ const Login = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Tu Email"
+                placeholder="Email"
                 value={email}
                 onChange={onChange}
               />
             </div>
             <div className="campo-form">
-              <label htmlFor="password">Contraseña</label>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
                 id="password"
                 name="password"
-                placeholder="Contraseña"
+                placeholder="Password"
                 value={password}
                 onChange={onChange}
               />
             </div>
-            {errorEmail && <p>El email ingresado es incorrecto</p>}
-            {errorPassword && <p>La contraseña ingresada es incorrecta</p>}
+            {errorEmail && <p>The email entered is incorrect</p>}
+            {errorPassword && <p>The password entered is incorrect</p>}
             <div className="campo-form">
               <button
                 className="btn tbn-primario btn-block"
                 onClick={handleClick}
               >
-                Iniciar Sesion
+                Log in
               </button>
               <formulario />
             </div>
